@@ -1,0 +1,17 @@
+pipeline{
+  agent any
+  stages{
+    stages("checkout") {
+        steps{
+            echo "checkout stage"
+        }
+    }
+     stages("checkout") {
+        steps{
+            echo "checkout stage"
+          }
+        }
+    }
+  }
+  
+  
