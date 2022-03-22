@@ -1,17 +1,17 @@
 pipeline{
   agent any
   stages{
-    stages("checkout") {
+    stages("checkout"){
         steps{
-            echo "checkout stage"
+          echo "checkout stage"
         }
-    }
-     stages("checkout") {
-        steps{
-            echo "checkout stage"
-          }
+      }
+    stages("build"){
+      steps{
+        echo "build stage"
         }
+      }
+      }
     }
-  }
   
   
